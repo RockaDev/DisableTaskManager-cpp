@@ -2,7 +2,7 @@
 
 int main(int args, char* argv[])
 {
-	Registry reg;
-	reg.ModifyRegistry();
+	Registry REG;
+	REG.EnableT_MGR();
 	return 0;
 }
