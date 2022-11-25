@@ -103,8 +103,6 @@ void SYS::Registry::ModifyRegistry()
 	return;
 }
 
-};
-
 int main(int args, char * argv[])
 {
 	SYS::Registry reg; // Declare class as reg
